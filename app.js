@@ -312,7 +312,12 @@ function generateCv() {
         cvLangOb === null || cvLangOb === void 0 ? void 0 : cvLangOb.insertBefore(newNodeLi, cvLanguagesSpan);
         cvLangOb === null || cvLangOb === void 0 ? void 0 : cvLangOb.insertBefore(newNodeLiBr, cvLanguagesSpan);
     }
-    document.getElementById('resume').style.display = 'block';
+    if (!(inputName1 == "") && !(inputContactEmail == "")) {
+        document.getElementById('resume').style.display = 'block';
+    }
+    else {
+        alert("Please enter Your name and Email Address");
+    }
 }
 // Get the color input and the div element
 var colorPicker = document.getElementById('colorPicker');

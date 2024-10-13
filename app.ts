@@ -532,8 +532,11 @@ function generateCv(){
     }
     
     
-    
-    document.getElementById('resume')!.style.display = 'block';
+    if(!(inputName1 == "") && !(inputContactEmail == "")){
+        document.getElementById('resume')!.style.display = 'block';
+    }else{
+        alert("Please enter Your name and Email Address")
+    }
 }
 
 
